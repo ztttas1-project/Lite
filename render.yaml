@@ -1,0 +1,11 @@
+services:
+- type: web
+  name: sml
+  runtime: python
+  repo: https://github.com/ztttas1-project/Lite
+  branch: master
+  plan: free
+  region: singapore
+  buildCommand: pip3 install yt-dlp flask waitress requests urllib3 timeago
+  startCommand: python3 main.py
+version: "1"
